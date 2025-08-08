@@ -1,4 +1,4 @@
-const BACKEND_URL = "https://YOUR-BACKEND-DEPLOYMENT/query";
+const BACKEND_URL = "https://noahung.github.io/ga4-mcp-chat/";
 
 // Check if user is already authenticated
 document.addEventListener('DOMContentLoaded', () => {
