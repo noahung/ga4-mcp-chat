@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GA4 MCP Chat</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <div id="password-screen">
+    <h2>> GA4 MCP Chat - Authentication</h2>
+    <div class="terminal-container">
+      <div class="terminal-line">Password: </div>
+      <input type="password" id="password" placeholder="" autocomplete="off" />
+      <button id="enter-btn">Login</button>
+      <p id="password-error"></p>
+    </div>
+  </div>
+
+  <div id="chat-screen" style="display:none;">
+    <h2>> GA4 MCP Chat Terminal</h2>
+    <div id="chat-window">
+      <div class="message bot">
+        <span class="prompt">System > </span>
+        <span>Welcome to GA4 MCP Chat. Ask me anything about your Google Analytics 4 data.</span>
+      </div>
+      <div class="message bot">
+        <span class="prompt">System > </span>
+        <span>Example queries:
+- "What was the bounce rate yesterday?"
+- "Top 10 landing pages last week"
+- "Show me user engagement by country"</span>
+      </div>
+    </div>
+    <div id="input-area">
+      <span class="prompt">query > </span>
+      <input type="text" id="message" placeholder="Type your GA4 query here..." autocomplete="off" />
+      <button id="send-btn">Run</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
